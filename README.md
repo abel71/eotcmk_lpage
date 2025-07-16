@@ -1,13 +1,15 @@
 # Campus Ministry General Assembly 2025 - Landing Page
 
-A modern, responsive, and visually appealing landing page for the 7th Annual Campus Ministry General Assembly of the Ethiopian Orthodox Tewahedo Church.
+A modern, responsive, and visually appealing landing page for the 7TH EOTC MK USA Campus Ministry General Assembly of the Ethiopian Orthodox Tewahedo Church.
 
 ## 🎨 Design Features
 
 ### Modern & Elegant Design
 - **Ethiopian-inspired color palette**: Gold (#D4AF37), Burgundy (#800020), Deep Green (#2E8B57)
 - **Beautiful typography**: Combination of Inter and Playfair Display fonts
-- **Gradient backgrounds** and smooth animations
+- **Official Mahibere Kidusan logo** integrated in navigation, footer, and hero background
+- **Rich background photography** with parallax effects in hero and about sections
+- **Gradient overlays** and smooth animations
 - **Orthodox Christian aesthetics** with cross patterns and spiritual imagery
 
 ### Responsive & Interactive
@@ -25,7 +27,7 @@ A modern, responsive, and visually appealing landing page for the 7th Annual Cam
 
 ## 📅 Event Information
 
-- **Event**: 7th Annual Campus Ministry General Assembly
+- **Event**: 7TH EOTC MK USA Campus Ministry General Assembly
 - **Theme**: "Do all to the glory of God" (1 Corinthians 10:31)
 - **Dates**: July 18-20, 2025
 - **Location**: Atlanta, Georgia
@@ -39,7 +41,10 @@ EOTC_MK_campus/
 ├── index.html          # Main HTML structure
 ├── styles.css          # Modern CSS styling with animations
 ├── script.js           # Interactive JavaScript functionality
-└── README.md          # This documentation file
+├── README.md          # This documentation file
+└── imgs/
+    ├── Mahibere_Kidusan_logo.png  # Official logo file
+    └── photo1.jpg                 # Background photo for hero and about sections
 ```
 
 ### Key Features Implemented
@@ -47,9 +52,10 @@ EOTC_MK_campus/
 2. **About Section** highlighting spiritual leaders and event purpose
 3. **Interactive Schedule** with tabbed interface for three days
 4. **Registration Information** with forms and dress code
-5. **Contact Section** with planning committee details
-6. **Mobile Navigation** with hamburger menu
-7. **Scroll Animations** and progress indicator
+5. **Social Media Integration** with Instagram, Facebook, TikTok, and YouTube
+6. **Contact Section** with planning committee details and feedback request
+7. **Mobile Navigation** with hamburger menu
+8. **Scroll Animations** and progress indicator
 
 ## 🚀 Getting Started
 
@@ -69,7 +75,11 @@ EOTC_MK_campus/
 The website includes direct links to:
 - **Activity Selection Form**: https://forms.gle/Qm29RtYFMd5raSP36
 - **Graduate Registration**: https://forms.gle/b2AiVD3KHbHzwACo6
-- **Social Media Channels**: Instagram and Telegram (placeholder links)
+- **Social Media Channels**: 
+  - Instagram: @usa_campus_ministry
+  - Facebook: @campusministryusa
+  - TikTok: @usa_campus_ministry
+  - YouTube: @usa_campus_ministry
 
 ## 🎨 Color Scheme
 

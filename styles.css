@@ -69,6 +69,23 @@ body {
     height: 80px;
 }
 
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-logo .logo-img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition-smooth);
+}
+
+.nav-logo .logo-img:hover {
+    transform: scale(1.05);
+}
+
 .nav-logo .logo-text {
     font-family: var(--font-display);
     font-size: 28px;
@@ -129,10 +146,12 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.9), rgba(128, 0, 32, 0.9)), 
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="cross" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M45 10 L55 10 L55 45 L90 45 L90 55 L55 55 L55 90 L45 90 L45 55 L10 55 L10 45 L45 45 Z" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23cross)"/></svg>');
-    background-size: cover, 100px 100px;
-    background-position: center, center;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.85), rgba(128, 0, 32, 0.85)), 
+                url('imgs/photo1.jpg'),
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="cross" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M45 10 L55 10 L55 45 L90 45 L90 55 L55 55 L55 90 L45 90 L45 55 L10 55 L10 45 L45 45 Z" fill="rgba(255,255,255,0.03)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23cross)"/></svg>');
+    background-size: cover, cover, 100px 100px;
+    background-position: center, center, center;
+    background-repeat: no-repeat, no-repeat, repeat;
     position: relative;
     display: flex;
     align-items: center;
@@ -145,7 +164,25 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-logo-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.hero-bg-logo {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.05;
+    mix-blend-mode: soft-light;
 }
 
 .hero-content {
@@ -335,7 +372,11 @@ body {
 /* About Section */
 .about {
     padding: var(--section-padding);
-    background: var(--soft-cream);
+    background: linear-gradient(rgba(248, 246, 240, 0.95), rgba(248, 246, 240, 0.95)), 
+                url('imgs/photo1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .about-intro {
@@ -779,8 +820,10 @@ body {
 
 .connect-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .connect-card {
@@ -922,6 +965,24 @@ body {
     margin-top: 20px;
 }
 
+.feedback-note {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.feedback-note h4 {
+    color: var(--primary-gold);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.feedback-note p {
+    opacity: 0.9;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
 /* Footer */
 .footer {
     background: var(--charcoal);
@@ -934,6 +995,21 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
     margin-bottom: 40px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(1.2) contrast(1.1);
+    opacity: 0.9;
 }
 
 .footer-section h4 {
@@ -977,6 +1053,14 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll;
+    }
+    
+    .about {
+        background-attachment: scroll;
+    }
+    
     .hamburger {
         display: flex;
     }
@@ -1075,6 +1159,28 @@ body {
     
     .hero-theme span {
         font-size: 20px;
+    }
+    
+    .nav-logo .logo-img {
+        height: 35px;
+    }
+    
+    .nav-logo .logo-text {
+        font-size: 22px;
+    }
+    
+    .hero-bg-logo {
+        width: 200px;
+    }
+    
+    .footer-logo {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .footer-logo-img {
+        height: 40px;
     }
     
     .container {
