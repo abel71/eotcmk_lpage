@@ -1115,17 +1115,22 @@ body {
 @media (max-width: 768px) {
     .hero {
         background-attachment: scroll;
-        padding-top: 100px;
+        padding-top: 140px;
         min-height: 100vh;
     }
     
     .hero-content {
-        padding-top: 40px;
+        padding-top: 60px;
     }
     
     .hero-subtitle {
         font-size: clamp(24px, 6vw, 36px);
         margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    
+    .hero-text {
+        margin-top: 40px;
     }
     
     .about {
@@ -1228,17 +1233,22 @@ body {
 
 @media (max-width: 480px) {
     .hero {
-        padding-top: 120px;
+        padding-top: 160px;
         min-height: 100vh;
     }
     
     .hero-content {
-        padding-top: 50px;
+        padding-top: 80px;
     }
     
     .hero-subtitle {
         font-size: clamp(20px, 5vw, 30px);
         margin-bottom: 25px;
+        margin-top: 30px;
+    }
+    
+    .hero-text {
+        margin-top: 60px;
     }
     
     .hero-title {
