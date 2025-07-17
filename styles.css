@@ -6,10 +6,14 @@
 }
 
 :root {
-    /* Color Palette - Ethiopian and Orthodox inspired */
+    /* Color Palette - Sky blue and cloud inspired with Ethiopian accents */
     --primary-gold: #D4AF37;
     --rich-burgundy: #800020;
-    --deep-green: #2E8B57;
+    --sky-blue: #87CEEB;
+    --deep-sky-blue: #4A90E2;
+    --cloud-white: #F8FBFF;
+    --soft-cloud: #E8F4FD;
+    --cloud-gray: #B8D4F0;
     --warm-white: #FEFEFE;
     --soft-cream: #F8F6F0;
     --charcoal: #2C2C2C;
@@ -37,7 +41,7 @@ body {
     font-family: var(--font-primary);
     line-height: 1.6;
     color: var(--charcoal);
-    background-color: var(--warm-white);
+    background: linear-gradient(135deg, var(--cloud-white), var(--soft-cloud));
     overflow-x: hidden;
 }
 
@@ -146,10 +150,10 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.85), rgba(128, 0, 32, 0.85)), 
+    background: linear-gradient(135deg, rgba(135, 206, 235, 0.8), rgba(74, 144, 226, 0.85)), 
                 url('imgs/photo1.jpg'),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="cross" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M45 10 L55 10 L55 45 L90 45 L90 55 L55 55 L55 90 L45 90 L45 55 L10 55 L10 45 L45 45 Z" fill="rgba(255,255,255,0.03)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23cross)"/></svg>');
-    background-size: cover, cover, 100px 100px;
+                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><pattern id="cloud" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="30" cy="30" r="8" fill="rgba(255,255,255,0.1)"/><circle cx="70" cy="50" r="6" fill="rgba(255,255,255,0.08)"/><circle cx="50" cy="70" r="5" fill="rgba(255,255,255,0.06)"/></pattern></defs><rect width="100%" height="100%" fill="url(%23cloud)"/></svg>');
+    background-size: cover, cover, 150px 150px;
     background-position: center, center, center;
     background-repeat: no-repeat, no-repeat, repeat;
     position: relative;
@@ -195,12 +199,18 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 2px;
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 600;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    margin-bottom: 20px;
-    opacity: 0.9;
+    margin-bottom: 25px;
+    opacity: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, var(--primary-gold), #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
 }
 
 .hero-title {
@@ -314,6 +324,20 @@ body {
     transform: translateY(-3px);
 }
 
+.btn-social {
+    background: linear-gradient(135deg, var(--sky-blue), var(--deep-sky-blue));
+    color: var(--warm-white);
+    border: 2px solid transparent;
+    box-shadow: 0 4px 15px rgba(135, 206, 235, 0.3);
+}
+
+.btn-social:hover {
+    background: linear-gradient(135deg, var(--deep-sky-blue), #3A7BD5);
+    color: var(--warm-white);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(135, 206, 235, 0.5);
+}
+
 .scroll-indicator {
     position: absolute;
     bottom: 30px;
@@ -372,7 +396,7 @@ body {
 /* About Section */
 .about {
     padding: var(--section-padding);
-    background: linear-gradient(rgba(248, 246, 240, 0.95), rgba(248, 246, 240, 0.95)), 
+    background: linear-gradient(rgba(232, 244, 253, 0.95), rgba(248, 251, 255, 0.95)), 
                 url('imgs/photo1.jpg');
     background-size: cover;
     background-position: center;
@@ -411,7 +435,7 @@ body {
 
 .highlight-item:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-medium);
+    box-shadow: 0 8px 30px rgba(135, 206, 235, 0.2);
 }
 
 .highlight-icon {
@@ -495,7 +519,7 @@ body {
 /* Schedule Section */
 .schedule {
     padding: var(--section-padding);
-    background: var(--warm-white);
+    background: var(--cloud-white);
 }
 
 .schedule-tabs {
@@ -508,9 +532,9 @@ body {
 
 .tab-btn {
     padding: 15px 40px;
-    border: 2px solid var(--primary-gold);
+    border: 2px solid var(--sky-blue);
     background: transparent;
-    color: var(--primary-gold);
+    color: var(--deep-sky-blue);
     border-radius: 50px;
     font-weight: 600;
     font-size: 16px;
@@ -520,10 +544,11 @@ body {
 
 .tab-btn.active,
 .tab-btn:hover {
-    background: linear-gradient(135deg, var(--primary-gold), var(--rich-burgundy));
+    background: linear-gradient(135deg, var(--sky-blue), var(--deep-sky-blue));
     color: var(--warm-white);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-medium);
+    box-shadow: 0 8px 25px rgba(135, 206, 235, 0.4);
+    border-color: var(--deep-sky-blue);
 }
 
 .day-schedule {
@@ -541,12 +566,13 @@ body {
 }
 
 .day-header {
-    background: linear-gradient(135deg, var(--deep-green), var(--accent-blue));
+    background: linear-gradient(135deg, var(--sky-blue), var(--deep-sky-blue));
     color: var(--warm-white);
     padding: 40px;
     border-radius: 20px;
     margin-bottom: 40px;
     text-align: center;
+    box-shadow: 0 8px 32px rgba(135, 206, 235, 0.3);
 }
 
 .day-header h3 {
@@ -591,10 +617,10 @@ body {
     align-items: center;
     gap: 25px;
     padding: 25px;
-    background: var(--soft-cream);
+    background: var(--cloud-white);
     border-radius: 15px;
     transition: var(--transition-smooth);
-    border-left: 5px solid var(--primary-gold);
+    border-left: 5px solid var(--sky-blue);
 }
 
 .activity-item:hover {
@@ -635,7 +661,7 @@ body {
 /* Registration Section */
 .registration {
     padding: var(--section-padding);
-    background: var(--soft-cream);
+    background: var(--soft-cloud);
 }
 
 .registration-grid {
@@ -815,7 +841,7 @@ body {
 /* Connect Section */
 .connect {
     padding: var(--section-padding);
-    background: var(--warm-white);
+    background: var(--cloud-white);
 }
 
 .connect-grid {
@@ -827,12 +853,13 @@ body {
 }
 
 .connect-card {
-    background: var(--soft-cream);
+    background: var(--soft-cloud);
     padding: 40px;
     border-radius: 20px;
     text-align: center;
     transition: var(--transition-smooth);
-    border-top: 5px solid var(--deep-green);
+    border-top: 5px solid var(--sky-blue);
+    box-shadow: 0 4px 20px rgba(135, 206, 235, 0.1);
 }
 
 .connect-card:hover {
@@ -844,12 +871,13 @@ body {
 .connect-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, var(--deep-green), var(--accent-blue));
+    background: linear-gradient(135deg, var(--sky-blue), var(--deep-sky-blue));
     border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
+    box-shadow: 0 4px 15px rgba(135, 206, 235, 0.3);
 }
 
 .connect-icon i {
@@ -873,7 +901,7 @@ body {
 /* Contact Section */
 .contact {
     padding: var(--section-padding);
-    background: var(--soft-cream);
+    background: var(--soft-cloud);
 }
 
 .contact-content {
@@ -939,11 +967,11 @@ body {
 }
 
 .message-card {
-    background: linear-gradient(135deg, var(--deep-green), var(--accent-blue));
+    background: linear-gradient(135deg, var(--sky-blue), var(--deep-sky-blue));
     color: var(--warm-white);
     padding: 40px;
     border-radius: 20px;
-    box-shadow: var(--shadow-medium);
+    box-shadow: 0 8px 32px rgba(135, 206, 235, 0.3);
 }
 
 .message-card h3 {

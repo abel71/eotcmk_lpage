@@ -5,12 +5,12 @@ A modern, responsive, and visually appealing landing page for the 7TH EOTC MK US
 ## 🎨 Design Features
 
 ### Modern & Elegant Design
-- **Ethiopian-inspired color palette**: Gold (#D4AF37), Burgundy (#800020), Deep Green (#2E8B57)
+- **Sky blue and cloud-inspired color palette**: Sky Blue (#87CEEB), Deep Sky Blue (#4A90E2), Cloud White (#F8FBFF), with Ethiopian gold accents
 - **Beautiful typography**: Combination of Inter and Playfair Display fonts
 - **Official Mahibere Kidusan logo** integrated in navigation, footer, and hero background
 - **Rich background photography** with parallax effects in hero and about sections
-- **Gradient overlays** and smooth animations
-- **Orthodox Christian aesthetics** with cross patterns and spiritual imagery
+- **Heavenly gradient overlays** and smooth animations
+- **Spiritual aesthetics** with cloud patterns and sky-inspired imagery
 
 ### Responsive & Interactive
 - **Mobile-first design** that works on all devices
@@ -83,11 +83,12 @@ The website includes direct links to:
 
 ## 🎨 Color Scheme
 
-- **Primary Gold**: #D4AF37 (Ethiopian gold)
-- **Rich Burgundy**: #800020 (Orthodox burgundy)
-- **Deep Green**: #2E8B57 (Sacred green)
-- **Warm White**: #FEFEFE (Clean background)
-- **Soft Cream**: #F8F6F0 (Section backgrounds)
+- **Sky Blue**: #87CEEB (Heavenly sky)
+- **Deep Sky Blue**: #4A90E2 (Divine depth)
+- **Cloud White**: #F8FBFF (Pure clouds)
+- **Soft Cloud**: #E8F4FD (Gentle cloud background)
+- **Cloud Gray**: #B8D4F0 (Subtle cloud accent)
+- **Primary Gold**: #D4AF37 (Ethiopian gold accent)
 - **Charcoal**: #2C2C2C (Text color)
 
 ## 🛠️ Browser Support
