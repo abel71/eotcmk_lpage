@@ -52,7 +52,7 @@ EOTC_MK_campus/
 2. **About Section** highlighting spiritual leaders and event purpose
 3. **Interactive Schedule** with tabbed interface for three days
 4. **Registration Information** with forms and dress code
-5. **Social Media Integration** with Instagram, Facebook, TikTok, and YouTube
+5. **Social Media Integration** with Instagram, Facebook, TikTok, YouTube, and MK Website
 6. **Contact Section** with planning committee details and feedback request
 7. **Mobile Navigation** with hamburger menu
 8. **Scroll Animations** and progress indicator
@@ -75,11 +75,12 @@ EOTC_MK_campus/
 The website includes direct links to:
 - **Activity Selection Form**: https://forms.gle/Qm29RtYFMd5raSP36
 - **Graduate Registration**: https://forms.gle/b2AiVD3KHbHzwACo6
-- **Social Media Channels**: 
+- **Social Media Channels & Website**: 
   - Instagram: @usa_campus_ministry
   - Facebook: @campusministryusa
   - TikTok: @usa_campus_ministry
   - YouTube: @usa_campus_ministry
+  - MK Website: https://eotcmk.org/e/
 
 ## 🎨 Color Scheme
 

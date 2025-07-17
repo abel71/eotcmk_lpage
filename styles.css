@@ -361,6 +361,8 @@ body {
 .section-header {
     text-align: center;
     margin-bottom: 80px;
+    position: relative;
+    z-index: 2;
 }
 
 .section-title {
@@ -841,7 +843,7 @@ body {
 /* Connect Section */
 .connect {
     padding: var(--section-padding);
-    background: var(--cloud-white);
+    background: linear-gradient(135deg, var(--cloud-white), rgba(135, 206, 235, 0.05), var(--soft-cloud));
 }
 
 .connect-grid {
@@ -850,22 +852,49 @@ body {
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .connect-card {
-    background: var(--soft-cloud);
+    background: linear-gradient(135deg, var(--cloud-white), var(--soft-cloud));
     padding: 40px;
     border-radius: 20px;
     text-align: center;
     transition: var(--transition-smooth);
     border-top: 5px solid var(--sky-blue);
     box-shadow: 0 4px 20px rgba(135, 206, 235, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.connect-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(135, 206, 235, 0.1), rgba(74, 144, 226, 0.15));
+    border-radius: 20px;
+    opacity: 0;
+    transition: var(--transition-smooth);
+    z-index: 1;
 }
 
 .connect-card:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-medium);
-    background: var(--warm-white);
+    box-shadow: 0 8px 30px rgba(135, 206, 235, 0.3);
+    background: linear-gradient(135deg, var(--cloud-white), rgba(135, 206, 235, 0.1));
+}
+
+.connect-card:hover::before {
+    opacity: 1;
+}
+
+.connect-card * {
+    position: relative;
+    z-index: 2;
 }
 
 .connect-icon {
@@ -1083,6 +1112,11 @@ body {
 @media (max-width: 768px) {
     .hero {
         background-attachment: scroll;
+        padding-top: 80px;
+    }
+    
+    .hero-content {
+        padding-top: 20px;
     }
     
     .about {
@@ -1181,6 +1215,14 @@ body {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        padding-top: 80px;
+    }
+    
+    .hero-content {
+        padding-top: 30px;
+    }
+    
     .hero-title {
         font-size: 2.5rem;
     }
@@ -1230,4 +1272,6 @@ body {
     .message-card {
         padding: 30px 20px;
     }
-} 
+}
+
+ 

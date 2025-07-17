@@ -320,40 +320,7 @@ function addTooltips() {
 // Initialize tooltips
 addTooltips();
 
-// Add theme toggle (optional enhancement)
-function addThemeToggle() {
-    const themeToggle = document.createElement('button');
-    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-    themeToggle.style.cssText = `
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        border: none;
-        background: linear-gradient(135deg, #D4AF37, #800020);
-        color: white;
-        font-size: 18px;
-        cursor: pointer;
-        z-index: 1000;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-        transition: transform 0.3s ease;
-    `;
-    
-    themeToggle.addEventListener('mouseenter', () => {
-        themeToggle.style.transform = 'scale(1.1)';
-    });
-    
-    themeToggle.addEventListener('mouseleave', () => {
-        themeToggle.style.transform = 'scale(1)';
-    });
-    
-    document.body.appendChild(themeToggle);
-}
-
-// Initialize theme toggle
-addThemeToggle();
+// Theme toggle functionality removed
 
 // Performance optimization - Lazy loading for images
 function initLazyLoading() {
