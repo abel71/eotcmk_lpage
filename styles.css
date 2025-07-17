@@ -313,15 +313,18 @@ body {
 }
 
 .btn-secondary {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.2);
     color: var(--warm-white);
-    border-color: var(--warm-white);
+    border: 2px solid var(--warm-white);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .btn-secondary:hover {
     background: var(--warm-white);
     color: var(--charcoal);
     transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .btn-social {
@@ -1112,11 +1115,17 @@ body {
 @media (max-width: 768px) {
     .hero {
         background-attachment: scroll;
-        padding-top: 80px;
+        padding-top: 100px;
+        min-height: 100vh;
     }
     
     .hero-content {
-        padding-top: 20px;
+        padding-top: 40px;
+    }
+    
+    .hero-subtitle {
+        font-size: clamp(24px, 6vw, 36px);
+        margin-bottom: 30px;
     }
     
     .about {
@@ -1138,6 +1147,7 @@ body {
         transition: 0.3s;
         box-shadow: var(--shadow-medium);
         padding: 20px 0;
+        z-index: 999;
     }
     
     .nav-menu.active {
@@ -1157,10 +1167,12 @@ body {
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        margin-top: 40px;
     }
     
     .btn {
         width: 250px;
+        margin: 10px 0;
     }
     
     .about-highlights {
@@ -1216,11 +1228,17 @@ body {
 
 @media (max-width: 480px) {
     .hero {
-        padding-top: 80px;
+        padding-top: 120px;
+        min-height: 100vh;
     }
     
     .hero-content {
-        padding-top: 30px;
+        padding-top: 50px;
+    }
+    
+    .hero-subtitle {
+        font-size: clamp(20px, 5vw, 30px);
+        margin-bottom: 25px;
     }
     
     .hero-title {
