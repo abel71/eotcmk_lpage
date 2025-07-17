@@ -1,6 +1,6 @@
 # Campus Ministry General Assembly 2025 - Landing Page
 
-A modern, responsive, and visually appealing landing page for the 7TH EOTC MK USA Campus Ministry General Assembly of the Ethiopian Orthodox Tewahedo Church.
+A modern, responsive, and visually appealing landing page for the 7th EOTC MK USA Campus Ministry General Assembly of the Ethiopian Orthodox Tewahedo Church.
 
 ## 🎨 Design Features
 
@@ -27,7 +27,7 @@ A modern, responsive, and visually appealing landing page for the 7TH EOTC MK US
 
 ## 📅 Event Information
 
-- **Event**: 7TH EOTC MK USA Campus Ministry General Assembly
+- **Event**: 7th EOTC MK USA Campus Ministry General Assembly
 - **Theme**: "Do all to the glory of God" (1 Corinthians 10:31)
 - **Dates**: July 18-20, 2025
 - **Location**: Atlanta, Georgia
